@@ -60,7 +60,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Troubleshooting
 
-## Common Issues
+Common Issues
 - ModuleNotFoundError: Ensure all required Python libraries are installed.
 - I2C Interface: Verify the I2C interface is enabled and properly configured.
 - Service Not Starting: Check the service status and logs for any errors.
@@ -71,16 +71,18 @@ https://www.the-diy-life.com/add-an-oled-stats-display-to-raspberry-pi-os-bullse
 
 Setting Up an OLED Display on Kali Linux for Your Raspberry Pi: 
 https://tohfaakib.com/step-by-step-guide-to-setting-up-an-oled-display-on-kali-linux-for-your-raspberry-pi/
-Contributing
 
-OLED from: aliexpress
 RASPBERRYPI 1U 3D PRINTED TRAY: 
+https://www.printables.com/model/69176-1u-raspberry-pi-rack-with-moduler-trays
 
 Feel free to open issues or submit pull requests for improvements and bug fixes.
 
 ### File Structure
+
+```
 rpiOLED/
 ├── LICENSE
 ├── README.md
 ├── stats.py
 └── OLED_STATS.service
+```
