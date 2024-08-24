@@ -31,7 +31,8 @@ sudo apt-get install python3-venv
 python3 -m venv ~/myenv
 source ~/myenv/bin/activate
 
-sudo pip3 install adafruit-circuitpython-ssd1306 pillow psutil
+pip install adafruit-circuitpython-ssd1306 pillow psutil
+
 ```
 
 ### Step 3: Create Python Script
