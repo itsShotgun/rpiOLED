@@ -1,10 +1,12 @@
 [Unit]
-Description=My Python Script
-After=multi-user.target
+Description=OLED Stats Display Service
+After=network.target
 
 [Service]
-Type=idle
-ExecStart=/usr/bin/python3 /home/NetMaster/stats.py
+User=YOUR_USERNAME
+WorkingDirectory=/home/YOUR_USERNAME
+ExecStart=/home/YOUR_USERNAME/myenv/bin/python /home/YOUR_USERNAME/stats.py
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
