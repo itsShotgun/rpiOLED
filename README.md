@@ -47,7 +47,7 @@ copy and paste the code from `stats.py` included alongside this repo
 
 
 ### Step 4: Create Systemd Service
-Create a systemd service file to run the script on startup. Create a file named OLED_STATS.service in `/etc/systemd/system/`:
+Create a systemd service file to run the script on startup. Create a file named `OLED_STATS.service` in `/etc/systemd/system/`:
 copy and paste the code from `OLED_STATS.service` included alongside this repo
 
 ### Step 5: Enable and Start the Service
