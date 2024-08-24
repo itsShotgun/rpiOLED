@@ -22,6 +22,12 @@ sudo raspi-config
 
 Navigate to Interfacing Options -> I2C and enable it.
 
+Followed by
+```
+ls /dev/*i2c*
+```
+If the I2C interface is enabled, you should see something like /dev/i2c-1.
+
 ### Step 2: Install Required Libraries
 Install the necessary Python libraries:
 
