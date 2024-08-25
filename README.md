@@ -4,9 +4,7 @@ This project demonstrates how to set up an OLED stats display on a Raspberry Pi 
 
 ## Prerequisites
 
-- Raspberry Pi with I2C interface enabled
 - SSD1306 OLED display connected via I2C
-- Python 3 and necessary libraries
 
 ## Installation
 
@@ -26,7 +24,7 @@ Followed by
 ```
 ls /dev/*i2c*
 ```
-If the I2C interface is enabled, you should see something like /dev/i2c-1.
+If the I2C interface is enabled, you should see something like `/dev/i2c-1.`
 
 ### Step 2: Install Required Libraries
 Install the necessary Python libraries:
@@ -42,16 +40,16 @@ pip install adafruit-circuitpython-ssd1306 pillow psutil
 ```
 
 ### Step 3: Create Python Script
-Create a Python script named stats.py:
+Create a Python script named `stats.py`
 copy and paste the code from `stats.py` included alongside this repo
 
 
 ### Step 4: Create Systemd Service
-Create a systemd service file to run the script on startup. Create a file named `OLED_STATS.service` in `/etc/systemd/system/`:
+Create a systemd service file to run the script on startup. Create a file named `OLED_STATS.service` in `/etc/systemd/system/`
 copy and paste the code from `OLED_STATS.service` included alongside this repo
 
 ### Step 5: Enable and Start the Service
-Reload the systemd manager configuration, enable the service to start on boot, and then start the service:
+Reload the systemd manager configuration, enable the service to start on boot, and then start the service
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable OLED_STATS.service
@@ -59,7 +57,7 @@ sudo systemctl start OLED_STATS.service
 ```
 
 ### Step 6: Verify the Service
-Check the status of the service to ensure it's running correctly:
+Check the status of the service to ensure it's running correctly
 
 ```
 sudo systemctl status OLED_STATS.service
@@ -76,10 +74,10 @@ Common Issues
 - Service Not Starting: Check the service status and logs for any errors.
 
 ## Additional Resources
-Add an OLED Stats Display to Raspberry Pi OS Bullseye: 
+Add an OLED Stats Display to Raspberry Pi OS Bullseye
 https://www.the-diy-life.com/add-an-oled-stats-display-to-raspberry-pi-os-bullseye/
 
-Setting Up an OLED Display on Kali Linux for Your Raspberry Pi: 
+Setting Up an OLED Display on Kali Linux for Your Raspberry Pi
 https://tohfaakib.com/step-by-step-guide-to-setting-up-an-oled-display-on-kali-linux-for-your-raspberry-pi/
 
 RASPBERRYPI 1U 3D PRINTED TRAY: 
