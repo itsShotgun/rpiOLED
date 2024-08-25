@@ -5,6 +5,7 @@ After=network.target
 [Service]
 User=YOUR_USERNAME
 WorkingDirectory=/home/YOUR_USERNAME
+ExecStartPre=/bin/sleep 10
 ExecStart=/home/YOUR_USERNAME/myenv/bin/python /home/YOUR_USERNAME/stats.py
 Restart=always
 
