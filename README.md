@@ -66,6 +66,9 @@ sudo systemctl status OLED_STATS.service
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Video Demo
+https://www.youtube.com/watch?v=x7MqtFTsMDc&lc=Ugwa3uoNq4AAeLs0S2F4AaABAg&themeRefresh=1
+
 ## Troubleshooting
 
 Common Issues
